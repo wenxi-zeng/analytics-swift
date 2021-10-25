@@ -5,8 +5,15 @@ on:
     types:
       - requested
 jobs:
-  cancel:
+  cancel_ubuntu:
     runs-on: ubuntu-latest
+    steps:
+    - uses: styfle/cancel-workflow-action@0.9.1
+      with:
+        workflow_id: ${{ github.event.workflow.id }}
+
+  cancel_macos:
+    runs-on: macos-11
     steps:
     - uses: styfle/cancel-workflow-action@0.9.1
       with:
