@@ -63,7 +63,7 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: .build
-        key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+        key: ${{ runner.os }}-spm-ios-${{ hashFiles('**/Package.resolved') }}
         restore-keys: |
           ${{ runner.os }}-spm-ios
     - uses: webfactory/ssh-agent@v0.5.3
@@ -84,7 +84,7 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: .build
-        key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+        key: ${{ runner.os }}-spm-tvos-${{ hashFiles('**/Package.resolved') }}
         restore-keys: |
           ${{ runner.os }}-spm-tvos
     - uses: webfactory/ssh-agent@v0.5.3
@@ -105,7 +105,7 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: .build
-        key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+        key: ${{ runner.os }}-spm-watchos-${{ hashFiles('**/Package.resolved') }}
         restore-keys: |
           ${{ runner.os }}-spm-watchos
     - uses: webfactory/ssh-agent@v0.5.3
@@ -126,7 +126,7 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: .build
-        key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+        key: ${{ runner.os }}-spm-basic-example-${{ hashFiles('**/Package.resolved') }}
         restore-keys: |
           ${{ runner.os }}-spm-basic-example
     - uses: webfactory/ssh-agent@v0.5.3
@@ -151,7 +151,7 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: .build
-        key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+        key: ${{ runner.os }}-spm-dest-example-${{ hashFiles('**/Package.resolved') }}
         restore-keys: |
           ${{ runner.os }}-spm-dest-example
     - uses: webfactory/ssh-agent@v0.5.3
@@ -176,7 +176,7 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: .build
-        key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+        key: ${{ runner.os }}-spm-objc-example-${{ hashFiles('**/Package.resolved') }}
         restore-keys: |
           ${{ runner.os }}-spm-objc-example
     - uses: webfactory/ssh-agent@v0.5.3
@@ -201,7 +201,7 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: .build
-        key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+        key: ${{ runner.os }}-spm-ios-ui-${{ hashFiles('**/Package.resolved') }}
         restore-keys: |
           ${{ runner.os }}-spm-ios-ui
     - uses: webfactory/ssh-agent@v0.5.3
@@ -226,7 +226,7 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: .build
-        key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+        key: ${{ runner.os }}-spm-mac-ui-${{ hashFiles('**/Package.resolved') }}
         restore-keys: |
           ${{ runner.os }}-spm-mac-ui
     - uses: webfactory/ssh-agent@v0.5.3
