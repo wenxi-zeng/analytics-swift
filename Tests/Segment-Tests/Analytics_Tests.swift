@@ -232,7 +232,7 @@ final class Analytics_Tests: XCTestCase {
         XCTAssertNil(trackTraits)
         
         let analyticsTraits: MyTraits? = analytics.traits()
-        XCTAssertEqual("blah@blah.com", analyticsTraits?.email)
+        XCTAssertEqual("blah@blah.com", "abc")
     }
     
 
