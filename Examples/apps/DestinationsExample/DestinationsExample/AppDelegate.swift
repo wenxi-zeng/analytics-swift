@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let configuration = Configuration(writeKey: "WRITE_KEY")
-            .trackApplicationLifecycleEvents(true)
-            .flushInterval(1)
+//         let configuration = Configuration(writeKey: "WRITE_KEY")
+//             .trackApplicationLifecycleEvents(true)
+//             .flushInterval(1)
         
         analytics = Analytics(configuration: configuration)
         
