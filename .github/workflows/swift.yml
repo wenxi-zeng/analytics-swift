@@ -62,10 +62,10 @@ jobs:
         ref: ${{ github.event.pull_request.head.sha }}
     - uses: actions/cache@v2
       with:
-        path: /Users/runner/Library/Developer/Xcode/DerivedData
-        key: ${{ runner.os }}-spm-ios-2${{ hashFiles('**/Package.resolved') }}
+        path: /Users/runner/Library/Developer/Xcode/DerivedData/**/SourcePackages/checkouts
+        key: ${{ runner.os }}-spm-ios-3${{ hashFiles('**/Package.resolved') }}
         restore-keys: |
-          ${{ runner.os }}-spm-ios-2
+          ${{ runner.os }}-spm-ios-3
     - uses: webfactory/ssh-agent@v0.5.3
       with:
         ssh-private-key: ${{ secrets.SOVRAN_SSH_KEY }}
@@ -84,10 +84,10 @@ jobs:
         ref: ${{ github.event.pull_request.head.sha }}
     - uses: actions/cache@v2
       with:
-        path: /Users/runner/Library/Developer/Xcode/DerivedData
-        key: ${{ runner.os }}-spm-tvos-2-${{ hashFiles('**/Package.resolved') }}
+        path: /Users/runner/Library/Developer/Xcode/DerivedData/**/SourcePackages/checkouts
+        key: ${{ runner.os }}-spm-tvos-3-${{ hashFiles('**/Package.resolved') }}
         restore-keys: |
-          ${{ runner.os }}-spm-tvos-2
+          ${{ runner.os }}-spm-tvos-3
     - uses: webfactory/ssh-agent@v0.5.3
       with:
         ssh-private-key: ${{ secrets.SOVRAN_SSH_KEY }}
@@ -105,10 +105,10 @@ jobs:
         ref: ${{ github.event.pull_request.head.sha }}
     - uses: actions/cache@v2
       with:
-        path: /Users/runner/Library/Developer/Xcode/DerivedData
-        key: ${{ runner.os }}-spm-watchos-2-${{ hashFiles('**/Package.resolved') }}
+        path: /Users/runner/Library/Developer/Xcode/DerivedData/**/SourcePackages/checkouts
+        key: ${{ runner.os }}-spm-watchos-3-${{ hashFiles('**/Package.resolved') }}
         restore-keys: |
-          ${{ runner.os }}-spm-watchos-2
+          ${{ runner.os }}-spm-watchos-3
     - uses: webfactory/ssh-agent@v0.5.3
       with:
         ssh-private-key: ${{ secrets.SOVRAN_SSH_KEY }}
@@ -126,10 +126,10 @@ jobs:
         ref: ${{ github.event.pull_request.head.sha }}
     - uses: actions/cache@v2
       with:
-        path: /Users/runner/Library/Developer/Xcode/DerivedData
-        key: ${{ runner.os }}-spm-basic-example-2-${{ hashFiles('**/Package.resolved') }}
+        path: /Users/runner/Library/Developer/Xcode/DerivedData/**/SourcePackages/checkouts
+        key: ${{ runner.os }}-spm-basic-example-3-${{ hashFiles('**/Package.resolved') }}
         restore-keys: |
-          ${{ runner.os }}-spm-basic-example-2
+          ${{ runner.os }}-spm-basic-example-3
     - uses: webfactory/ssh-agent@v0.5.3
       with:
         ssh-private-key: ${{ secrets.SOVRAN_SSH_KEY }}
@@ -151,10 +151,10 @@ jobs:
         ref: ${{ github.event.pull_request.head.sha }}
     - uses: actions/cache@v2
       with:
-        path: /Users/runner/Library/Developer/Xcode/DerivedData
-        key: ${{ runner.os }}-spm-dest-example-2-${{ hashFiles('**/Package.resolved') }}
+        path: /Users/runner/Library/Developer/Xcode/DerivedData/**/SourcePackages/checkouts
+        key: ${{ runner.os }}-spm-dest-example-3-${{ hashFiles('**/Package.resolved') }}
         restore-keys: |
-          ${{ runner.os }}-spm-dest-example-2
+          ${{ runner.os }}-spm-dest-example-3
     - uses: webfactory/ssh-agent@v0.5.3
       with:
         ssh-private-key: ${{ secrets.SOVRAN_SSH_KEY }}
@@ -176,10 +176,10 @@ jobs:
         ref: ${{ github.event.pull_request.head.sha }}
     - uses: actions/cache@v2
       with:
-        path: /Users/runner/Library/Developer/Xcode/DerivedData
-        key: ${{ runner.os }}-spm-objc-example-2-${{ hashFiles('**/Package.resolved') }}
+        path: /Users/runner/Library/Developer/Xcode/DerivedData/**/SourcePackages/checkouts
+        key: ${{ runner.os }}-spm-objc-example-3-${{ hashFiles('**/Package.resolved') }}
         restore-keys: |
-          ${{ runner.os }}-spm-objc-example-2
+          ${{ runner.os }}-spm-objc-example-3
     - uses: webfactory/ssh-agent@v0.5.3
       with:
         ssh-private-key: ${{ secrets.SOVRAN_SSH_KEY }}
@@ -201,10 +201,10 @@ jobs:
         ref: ${{ github.event.pull_request.head.sha }}
     - uses: actions/cache@v2
       with:
-        path: /Users/runner/Library/Developer/Xcode/DerivedData
-        key: ${{ runner.os }}-spm-ios-ui-2-${{ hashFiles('**/Package.resolved') }}
+        path: /Users/runner/Library/Developer/Xcode/DerivedData/**/SourcePackages/checkouts
+        key: ${{ runner.os }}-spm-ios-ui-3-${{ hashFiles('**/Package.resolved') }}
         restore-keys: |
-          ${{ runner.os }}-spm-ios-ui-2
+          ${{ runner.os }}-spm-ios-ui-3
     - uses: webfactory/ssh-agent@v0.5.3
       with:
         ssh-private-key: ${{ secrets.SOVRAN_SSH_KEY }}
@@ -226,10 +226,10 @@ jobs:
         ref: ${{ github.event.pull_request.head.sha }}
     - uses: actions/cache@v2
       with:
-        path: /Users/runner/Library/Developer/Xcode/DerivedData
-        key: ${{ runner.os }}-spm-mac-ui-2-${{ hashFiles('**/Package.resolved') }}
+        path: /Users/runner/Library/Developer/Xcode/DerivedData/**/SourcePackages/checkouts
+        key: ${{ runner.os }}-spm-mac-ui-3-${{ hashFiles('**/Package.resolved') }}
         restore-keys: |
-          ${{ runner.os }}-spm-mac-ui-2
+          ${{ runner.os }}-spm-mac-ui-3
     - uses: webfactory/ssh-agent@v0.5.3
       with:
         ssh-private-key: ${{ secrets.SOVRAN_SSH_KEY }}
